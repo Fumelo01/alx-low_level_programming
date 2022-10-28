@@ -15,11 +15,11 @@ char *_strcat(char *dest, char *src)
 
 	for (i = 0; dest[i] != '\0'; i++)
 
-	for (j = 0; src[i] != '\0'; i++, j++)
+	for (j = 0; src[j] != '\0'; i++, j++)
 	{
-		printf("\ndest before:%s\n src before: %s\n", dest, src);
+
 		dest[i] = src[j];
-		printf("\ndest after: %s\n src after: %s\n", dest, src);
+
 	}
 	dest[i] = '\0';
 	return (dest);
